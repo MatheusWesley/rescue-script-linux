@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<menu id="apps-accessories-menu" label="Acessórios">
+  <item label="Gerenciador de Arquivos" icon="/usr/share/syspdv/gerenciadordearquivos.png">
+    <action name="Execute">
+      <command>sudo pcmanfm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Console" icon="/usr/share/syspdv/terminal.png">
+    <action name="Execute">
+      <command>x-terminal-emulator</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Gerenciador de Tarefas" icon="/usr/share/syspdv/gerenciadortarefas.png">
+    <action name="Execute">
+      <command>sudo -i lxtask</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Editor de Texto" icon="/usr/share/syspdv/sublime.png">
+    <action name="Execute">
+      <command>/opt/sublime_text/sublime_text</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Google Chrome" icon="/opt/google/chrome/product_logo_16.png">
+    <action name="Execute">
+      <command>/usr/bin/google-chrome</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-dev-menu" label="Dispositivos">
+   <item label="Servidor biométrico" icon="/usr/share/syspdv/biometria.png">
+      <action name="Execute">
+         <command>sudo -i biometria</command>
+
+         <startupnotify>
+            <enabled>yes</enabled>
+         </startupnotify>
+      </action>
+   </item>
+<item label="MFe-Tools" icon="/usr/share/syspdv/mfe.png">
+     <action name="Execute">
+         <command>sudo -i /opt/elgin/atv/bin/./run-atv.sh</command>
+
+         <startupnotify>
+            <enabled>yes</enabled>
+         </startupnotify>
+     </action>
+</item>
+<item label="Ativar Driver MFe" icon="/usr/share/syspdv/sefaz.png">
+     <action name="Execute">
+         <command>sudo -i /usr/local/bin/./ativa_mfe</command>
+
+         <startupnotify>
+            <enabled>yes</enabled>
+         </startupnotify>
+     </action>
+</item>
+<item label="Ativa Teclado de Automação" icon="/usr/share/syspdv/tec44usb.png">
+     <action name="Execute">
+         <command>sudo -i /usr/local/bin/./teclado</command>
+         <startupnotify>
+            <enabled>yes</enabled>
+         </startupnotify>
+     </action>
+</item>
+<item label="Ativa Docgate para compartilhamento MFE/SAT" icon="/usr/share/syspdv/docgate.png">
+     <action name="Execute">
+         <command>sudo -i /usr/local/bin/./ativa_docgate</command>
+         <startupnotify>
+            <enabled>yes</enabled>
+         </startupnotify>
+     </action>
+</item>
+  
+</menu>
+
+<menu id="root-menu" label="Lubuntu">
+  <separator label="Ferramentas do SysPDV" />
+  <item label="SysPDV" icon="/usr/share/syspdv/syspdv.png">
+    <action name="Execute">
+      <command>syspdv</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <item label="SysPDV Tools" icon="/usr/share/syspdv/syspdvtools.png">
+    <action name="Execute">
+      <command>syspdvtools</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <item label="IBOConsole" icon="/usr/share/syspdv/iboconsole.png">
+    <action name="Execute">
+      <command>IBOConsole</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <item label="DBeaver" icon="/usr/share/syspdv/dbeaver.png">
+    <action name="Execute">
+      <command>sudo -i dbeaver</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <item label="Acesso CM" icon="/opt/rescue-callingcard/callingcard.png">
+    <action name="Execute">
+      <command>sudo /opt/rescue-callingcard/bin/rescue_applet -CallingCard</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <item label="RecoveryDB-FB" icon="/usr/share/syspdv/recoverydb.png">
+    <action name="Execute">
+      <command>recoverydb-fb</command>
+      <startupnotfy>
+        <enabled>yes</enabled>
+      </startupnotfy>
+    </action>
+  </item>
+  <separator label="Ferramentas do Sistema" />
+  <menu id="apps-accessories-menu" icon="/usr/share/syspdv/acessorios.png"/>
+  <menu id="apps-net-menu" icon="/usr/share/syspdv/rede.png"/>
+  <menu id="apps-dev-menu" icon="/usr/share/syspdv/devices.png"/>
+  <separator label="Configurações do Sistema" />
+  <item label="Cofiguração Desktop" icon="/usr/share/syspdv/configdesktop.png">
+    <action name="Execute">
+      <command>pcmanfm --desktop-pref</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Configuração do OpenBox" icon="/usr/share/syspdv/configopenbox.png">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Configuração de Monitor" icon="/usr/share/syspdv/monitor.png">
+    <action name="Execute">
+      <command>lxrandr</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Configuração de Rede" icon="/usr/share/syspdv/network.png">
+    <action name="Execute">
+      <command>sudo ativa_rede</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator label="Inicialização do Sistema"/>
+   <item label="Encerrar SysPDV" icon="/usr/share/syspdv/fechasyspdv.png">
+    <action name="Execute">
+       <command>kill_pdv</command>
+    </action>
+  </item>
+  <item label="Reiniciar" icon="/usr/share/syspdv/reboot.png">
+    <action name="Execute">
+       <command>sudo reboot</command>
+    </action>
+  </item>
+  <item label="Desligar" icon="/usr/share/syspdv/shutdown.png">
+    <action name="Execute">
+       <command>sudo shutdown -h now</command>
+    </action>
+  </item>
+  </menu>
+</openbox_menu>
